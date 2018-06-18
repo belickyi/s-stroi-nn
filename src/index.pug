@@ -1,0 +1,228 @@
+mixin scripts(scripts)
+	each src in scripts
+		- src = 'js/' + src;
+		script(src=src)
+			
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=1180")
+		title Типография онлайн "Online print"
+		//css
+		link(rel="stylesheet" href="css/style.min.css")
+		//fonts
+		link(href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet")
+		// Favicon
+		link(href="images/favicon.ico" type="image/x-icon" rel="shortcut icon")
+		// animate css
+		link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css")
+		script(src="js/wow.min.js")
+		script.
+			new WOW().init();
+
+	body.body
+		//header
+		include blocks/header.pug
+		//content
+		.content
+			//slider
+			.main-slider.js-main-slider
+					.main-slider__i(style="background-image:url(images/slider/slide1.jpg);")
+						.wrap.main-slider__i-wrap.flex-center
+							.main-slider__i-text
+								span СТРОИТЕЛЬСТВО ДОМОВ ИЗ БРУСА<br>СО СВОИМ ПРОИЗВОДСТВОМ
+								p Наша цель проста - предоставить нашим клиентам высокий уровень качества и сервиса.<br>Мы верим, что отличные идеи начинаются с точного расчета.
+								a(href="#").button.button_view-reverse Подробнее
+					.main-slider__i(style="background-image:url(images/slider/slide2.jpg);")
+						.wrap.main-slider__i-wrap.flex-center
+							.main-slider__i-text2
+								span СТРОИТЕЛЬСТВО ДОМОВ ИЗ БРУСА<br>СО СВОИМ ПРОИЗВОДСТВОМ
+								p Наша цель проста - предоставить нашим клиентам высокий уровень качества и сервиса.<br>Мы верим, что отличные идеи начинаются с точного расчета.
+								a(href="#").button.button_view-reverse Подробнее
+			//advantages
+			.advantages.flex-space.wrap
+				.advantages__item.fadeInRight.animated.wow.column-2
+					.advantages__img
+						img(src="images/medal.png", alt="medal")
+					.advantages__title
+						h3 ВЫСОЧАЙШЕЕ КАЧЕСТВО
+					.advantages__text
+						p Собственное производство позволяет нам предоставить вам высочайшее качесвто строительства при низких ценах
+				.advantages__item.fadeInRight.animated.wow.column-2
+					.advantages__img
+						img(src="images/speed.png", alt="speed")
+					.advantages__title
+						h3 СКОРОСТЬ ОБРАБОТКИ ЗАЯВОК
+					.advantages__text
+						p Наша команда быстро ответит на все ваши вопросы, поможет расчитать и подобрать проект
+				.advantages__item.fadeInRight.animated.wow.column-2
+					.advantages__img
+						img(src="images/money.png", alt="money")
+					.advantages__title
+						h3 ГИБКАЯ ЦЕНОВАЯ ПОЛИТИКА
+					.advantages__text
+						p Мы индивидуально рассматриваем каждое обращение к нам и помогаем подобрать проект в зависимости от ваших финансовых возможностей
+								
+			//- //categories
+			//- .body__categories.bgc-grey
+			//- 	h1.title.wrap Категории
+
+			//- 	.flex-space.wrap.flex-wrap
+			//- 		.card.fadeInLeft.animated.wow.body__marbot
+			//- 			img.card__img(src="/images/categories/card.png", alt="card")
+			//- 			.card__text
+			//- 				Span.card__span Визитки
+			//- 				p.card__p.flex-vertical Создадим визитку бесплатно при заказе от 2000 штук!
+			//- 				a(href="/card.html").button.button_view-info Подробнее
+			//- 		.card.fadeInLeft.animated.wow.body__marbot
+			//- 			img.card__img(src="/images/categories/listovki.png", alt="listovki")
+			//- 			.card__text
+			//- 				Span.card__span Листовки
+			//- 				p.card__p.flex-vertical Создадим листовку бесплатно при заказе от 5000 штук!
+			//- 				a(href="/listovki.html").button.button_view-info Подробнее
+			//- 		.card.fadeInLeft.animated.wow.body__marbot
+			//- 			img.card__img(src="/images/categories/bukleti.png", alt="bukleti")
+			//- 			.card__text
+			//- 				Span.card__span Буклеты
+			//- 				p.card__p.flex-vertical Наша типография печатает все виды булетов.
+			//- 				a(href="/bukleti.html").button.button_view-info Подробнее
+			//- 		.card.fadeInRight.animated.wow.body__marbot
+			//- 			img.card__img(src="/images/categories/plakat.png", alt="plakat")
+			//- 			.card__text
+			//- 				Span.card__span Плакаты
+			//- 				p.card__p.flex-vertical Мы печатаем плакаты в Нижнем Новгороде по самой низкой цене.
+			//- 				a(href="/plakat.html").button.button_view-info Подробнее
+			//- 		.card.fadeInRight.animated.wow.body__marbot
+			//- 			img.card__img(src="/images/categories/broshura.png", alt="broshura")
+			//- 			.card__text
+			//- 				Span.card__span Брошюры
+			//- 				p.card__p.flex-vertical Печать брошюр в Нижнем Новгороде хорошего качества
+			//- 				a(href="/broshura.html").button.button_view-info Подробнее
+			//- 		.card.fadeInRight.animated.wow.body__marbot
+			//- 			img.card__img(src="/images/categories/books.png", alt="books")
+			//- 			.card__text
+			//- 				Span.card__span Журналы
+			//- 				p.card__p.flex-vertical Печать журналов в Нижнем Новгроде по низкой цене и с хорошим качеством.
+			//- 				a(href="/books.html").button.button_view-info Подробнее
+			//- 		.card.fadeInLeft.animated.wow.body__marbot
+			//- 			img.card__img(src="/images/categories/kalendar.png", alt="kalendar")
+			//- 			.card__text
+			//- 				Span.card__span Календари
+			//- 				p.card__p.flex-vertical Закажите печать квартальных календарей в Нижнем Новгороде у нас.
+			//- 				a(href="/kalendar.html").button.button_view-info Подробнее
+			//- 		.card.fadeInLeft.animated.wow.body__marbot
+			//- 			img.card__img(src="/images/categories/pechat.png", alt="pechat")
+			//- 			.card__text
+			//- 				Span.card__span Изготовление печатей
+			//- 				p.card__p.flex-vertical Изготовление печатей в Нижнем Новгороде по низкой цене.
+			//- 				a(href="/pechat.html").button.button_view-info Подробнее
+			//- 		.card.fadeInLeft.animated.wow.body__marbot
+			//- 			img.card__img(src="/images/categories/other.png", alt="other")
+			//- 			.card__text
+			//- 				Span.card__span Другие виды продукции и услуги
+			//- 				p.card__p.flex-vertical Мы всегда рады нашим клиентам и постоянно расширяем спектр производимых товаров
+			//- 				a(href="#").button.button_view-info Подробнее
+
+			//- // calculator
+			//- .body__calculator
+			//- 	.calculator
+			//- 		.wrap
+			//- 			h1.title-white Калькулятор стоимости
+			//- 			.calculator__container.fadeInRight.animated.wow
+			//- 				.calculator__form.flex-wrap.flex-inline.flex-evenly
+			//- 					.calculator__left.flex-column
+			//- 						label.calculator__label(for="n1") Тираж
+			//- 						input.input(type="text" name="Tiraz" id="n1")
+			//- 						label.calculator__label(for="format") Формат изделия
+			//- 						select.select(name="format" id="format")
+			//- 							option(value="29.1" selected) A1 (594*841мм)
+			//- 							option(value="22") A2 (420*594мм)
+			//- 							option(value="11") A3 (297*420мм)
+			//- 							option(value="5.1") A4 (210*297мм)
+			//- 							option(value="3.1") A5 (148*210мм)
+			//- 							option(value="2.1") A6 (105*158мм)
+			//- 							option(value="2.1") Флаер (99*210мм)
+			//- 						label.calculator__label(for="papper") Бумага
+			//- 						select.select(name="papper" id="papper")
+			//- 							option(value="1" selected) Офсетная 80г. (тонкая, как в принтере)
+			//- 							option(value="1.27") Мелованная 130г. (тонкая. как у листовок)
+			//- 							option(value="1.27") Мелованная 150г. (чуть толще)
+			//- 							option(value="1.45") Мелованная 170г. (поплотнее)
+			//- 							option(value="1.54") Мелованная 200г. (плотная)
+			//- 							option(value="1.72") Мелованная 250г. (еще плотнее)
+			//- 							option(value="1.95") Мелованная 300г. (самая плотная)
+			//- 							option(value="1.33") Картон 310гр. (как у визиток)
+			//- 							option(value="1.78") Самоклейка 80г.
+			//- 						label.calculator__label(for="color") Цветность
+			//- 						select.select(name="color" id="color")
+			//- 							option(value="1" selected) 1+0 (черно-белая, односторонняя)
+			//- 							option(value="1.5") 1+1 (черно-белая, двусторонняя)
+			//- 							option(value="2.5") 4+0 (цветная, односторонняя)
+			//- 							option(value="3") 4+4 (цветная, двусторонняя)
+			//- 						label.calculator__label(for="laminazia") Ламинация
+			//- 						select.select(name="laminazia" id="laminazia")
+			//- 							option(value="1" selected) Нет
+			//- 							option(value="1.5") Глянцевая 30мк. (односторонняя)
+			//- 							option(value="1.7") Глянцевая 30мк. (двухсторонняя)
+			//- 							option(value="1.5") Матовая 30мк. (односторонняя)
+			//- 							option(value="1.7") Матовая 30мк. (двухсторонняя)
+			//- 							option(value="1.7") Софт-тач 30мк. (матовая, односторонняя, с эффектом резины)
+			//- 							option(value="1.9") Матовая 30мк. (матовая, двухсторонняя, с эффектом резины)
+
+			//- 					.calculator__right.flex-column
+			//- 						label.calculator__label(for="Kruglenie") Кругление углов
+			//- 						select.select(name="Kruglenie" id="Kruglenie")
+			//- 							option(value="0" selected) Нет
+			//- 							option(value="2") 1 угол
+			//- 							option(value="4") 2 угола
+			//- 							option(value="6") 3 угола
+			//- 							option(value="8") 4 угола
+			//- 						label.calculator__label(for="big") Биговка
+			//- 						select.select(name="big" id="big")
+			//- 							option(value="1" selected) Нет
+			//- 							option(value="1.25") 1 биг
+			//- 							option(value="1.5") 2 бига
+			//- 							option(value="1.75") 3 бига
+			//- 							option(value="2") 4 бига
+			//- 						label.calculator__label(for="falz") Фальц
+			//- 						select.select(name="falz" id="falz")
+			//- 							option(value="1" selected) Нет
+			//- 							option(value="1.25") 1 фальц
+			//- 							option(value="1.5") 2 фальца
+			//- 							option(value="1.75") 3 фальца
+			//- 							option(value="2") 4 фальца
+			//- 						.calculator__price
+			//- 							.calculator__span
+			//- 								| Стоимость заказа 
+			//- 								span#out.calculator__rub 0
+			//- 								|  &#8381
+			//- 							.flex-space
+			//- 								.button.calculator__btn.button_view-white(onclick ='calculator()') Расчитать
+			//- 								button.button.button_view-action.calculator__btn Оформить
+			//- // feedback
+			//- .feedback.flex-space.wrap.gap-vertical.flex-center.fadeInLeft.animated.wow
+			//- 	.form.column-4
+			//- 		.form__header.feedback__header Связаться с нами
+			//- 		.form__footer
+			//- 			.flex-space
+			//- 				.flex-column.column-3
+			//- 					span.form__error Необходимо заполнить поле
+			//- 					label.label.form__required(for="feedback_name") Ваше имя
+			//- 					input.input.feedback__width(type="text" id="feedback_name")
+			//- 				.flex-column.column-3
+			//- 					span.form__error Необходимо заполнить поле
+			//- 					label.label.form__required(for="feedback_email") Ваш email
+			//- 					input.input(type="text" id="feedback_email")
+			//- 			label.label(for="feedback_subject") Тема обращения
+			//- 			input.input(type="text" id="feedback_subject")
+			//- 			label.label(for="text" name="feedback_text") Текст
+			//- 			textarea.input(type="text" id="feedback_text")
+			//- 			button.button.button_view-action.form__submit Отправить
+
+		// footer
+		.body__footer
+			include blocks/footer.pug
+
+		//scripts
+		+scripts(['jquery-3.2.1.min.js', 'main.js', 'slick.min.js', 'calculator.js', 'form.js'])
