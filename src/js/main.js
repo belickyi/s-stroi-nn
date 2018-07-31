@@ -20,3 +20,12 @@ $(document).ready(function() {
 		}, 700);
 	});
 });
+
+// users
+function reverseArray(dt) {
+	for ( aaa = 0; aaa < dt.length; aaa++ ) {
+		console.log(dt.pop());
+	}
+}
+
+console.log(reverseArray(["A","B","C"]))
