@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1180">
+    <title>О нас</title>
+    <!--css-->
+    <link rel="stylesheet" href="css/style.min.css">
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- Favicon-->
+    <link href="images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <!-- animate css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+      
+    </script>
+  </head>
+  <body class="body">
+    <!--header-->
+    <header class="header">
+      <div class="headermiddle">
+        <div class="wrap flex-space">
+          <div class="logo headermiddle__logo"><a href="/index.html"><img src="images/logo.svg" alt="s-stoi-nn"></a><span>Строительство домов из дерева</span></div>
+          <div class="headermiddle__city flex-column"><a class="link headermiddle__city-chouse" href="#">Нижний Новгород</a><span class="headermiddle__text">Мы работаем по городу<br>и России   </span></div>
+          <div class="headermiddle__button">
+            <div class="button button_view-action" onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Заказать замер</div>
+          </div>
+          <div class="flex-column"><span class="headermiddle__tel-1">+7 (831) 413-76-72</span><span class="headermiddle__tel-2">+7 (920) 298-32-71 </span><a class="cursor headermiddle__feedback link_view-orange" onclick="document.getElementById('id03').style.display='block'" style="width:auto;">заказать обратный звонок</a>
+            <!-- feedback_modal-->
+            <div class="modal" id="id03"><span class="modal__close" onclick="document.getElementById('id03').style.display='none'" title="Close Modal">&times</span>
+              <div class="feedback flex-space wrap gap-vertical flex-center">
+                <form class="form column-4" action="feedback.php">
+                  <div class="form__header feedback__header">Связаться с нами</div>
+                  <div class="form__footer">
+                    <div class="flex-space">
+                      <div class="flex-column column-3">
+                        <label class="label" for="name">Ваше имя</label>
+                        <input class="input feedback__width" type="text" id="name">
+                      </div>
+                      <div class="flex-column column-3">
+                        <label class="label" for="email">Ваш email</label>
+                        <input class="input" type="text" id="email">
+                      </div>
+                    </div>
+                    <label class="label" for="subject">Тема обращения</label>
+                    <input class="input" type="text" id="subject">
+                    <label class="label" for="text">Текст</label>
+                    <textarea class="input" type="text" id="text"></textarea>
+                    <button class="button button_view-action" type="submit">Отправить</button>
+                  </div>
+                </form>
+              </div>
+            </div><span class="headermiddle__time">время работы: круглосуточно</span>
+          </div>
+        </div>
+      </div>
+      <div class="headerbottom">
+        <div class="wrap">
+          <div class="headerbottom__right flex-center"><a class="dropdown__button headerbottom__link" href="/index.html">ГЛАВНАЯ</a><a class="dropdown__button headerbottom__link" href="/bathhouse.html">БАНИ</a><a class="dropdown__button headerbottom__link" href="/portfolio.html">ПРИМЕРЫ РАБОТ</a><a class="dropdown__button headerbottom__link" href="/cost.html">СТОИМОСТЬ</a><a class="dropdown__button headerbottom__link" href="/about.html">О НАС</a></div>
+        </div>
+      </div>
+    </header>
+    <!--content-->
+    <div class="content">
+      <!--slider-->
+      <div class="main-slider js-main-slider">
+        <div class="main-slider__i" style="background-image:url(images/slider/slide1.jpg);">
+          <div class="wrap main-slider__i-wrap flex-center">
+            <div class="main-slider__i-text"><span>СТРОИТЕЛЬСТВО ДОМОВ ИЗ<br>ОЦИЛИНДРОВАННОГО БРЕВНА</span>
+              <p>Наша цель проста - предоставить нашим клиентам высокий уровень качества и сервиса.<br>Мы верим, что отличные идеи начинаются с точного расчета.</p><a class="button button_view-reverse" href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="main-slider__i" style="background-image:url(images/slider/slide2.jpg);">
+          <div class="wrap main-slider__i-wrap flex-center">
+            <div class="main-slider__i-text2"><span>СТРОИТЕЛЬСТВО ДОМОВ ИЗ БРУСА<br>СО СВОИМ ПРОИЗВОДСТВОМ</span>
+              <p>Наша цель проста - предоставить нашим клиентам высокий уровень качества и сервиса.<br>Мы верим, что отличные идеи начинаются с точного расчета.</p><a class="button button_view-reverse" href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--advantages-->
+      <div class="advantages flex-space wrap">
+        <div class="advantages__item fadeInRight animated wow col-4">
+          <div class="advantages__img"><img src="images/medal.png" alt="medal"></div>
+          <div class="advantages__title">
+            <h3>ВЫСОЧАЙШЕЕ КАЧЕСТВО</h3>
+          </div>
+          <div class="advantages__text">
+            <p>Собственное производство позволяет нам предоставить вам высочайшее качесвто строительства при низких ценах</p>
+          </div>
+        </div>
+        <div class="advantages__item fadeInRight animated wow col-4">
+          <div class="advantages__img"><img src="images/speed.png" alt="speed"></div>
+          <div class="advantages__title">
+            <h3>СКОРОСТЬ ОБРАБОТКИ ЗАЯВОК</h3>
+          </div>
+          <div class="advantages__text">
+            <p>Наша команда быстро ответит на все ваши вопросы, поможет расчитать и подобрать проект</p>
+          </div>
+        </div>
+        <div class="advantages__item fadeInRight animated wow col-4">
+          <div class="advantages__img"><img src="images/money.png" alt="money"></div>
+          <div class="advantages__title">
+            <h3>ГИБКАЯ ЦЕНОВАЯ ПОЛИТИКА</h3>
+          </div>
+          <div class="advantages__text">
+            <p>Мы индивидуально рассматриваем каждое обращение к нам и помогаем подобрать проект в зависимости от ваших финансовых возможностей</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer-->
+    <div class="body__footer">
+      <div class="footer wrap flex-space">
+        <div class="footer__menu flex-column"><a class="footer__link" href="/#">О нас</a><a class="footer__link" href="/#">Преимущества</a><a class="footer__link" href="/#">Примеры работ</a><a class="footer__link" href="/#">Стоимость</a><a class="footer__link" href="/#">Отзывы</a></div>
+        <div class="footer__contacts flex-column"><span>Адрес:</span><span>г. Нижний Новгород</span><span>ул. </span><span>тел. +7 (831) 413-76-72</span><span>почта s-stroi-nn@mail.ru</span></div>
+        <div class="footer__logo">
+          <div class="logo"><a href="#"><img src="images/logo.svg" alt="s-stoi-nn"></a><span class="footer__span">Строительство домов из бруса</span></div>
+          <div class="social"><a class="social__link" href="#"><img class="social__pic" src="/images/vk.png" alt="vk"></a><a class="social__link" href="#"><img class="social__pic" src="/images/instagram.png" alt="instagram"></a><a class="social__link" href="#"><img class="social__pic" src="/images/facebook.png" alt="facebook"></a><a class="social__link" href="#"><img class="social__pic" src="/images/whatsapp.png" alt="whatsapp"></a></div>
+        </div>
+      </div>
+    </div>
+    <!--scripts-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/form.js"></script>
+  </body>
+</html>

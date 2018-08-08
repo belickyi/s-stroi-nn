@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1180">
+    <title>Строительство домов из дерева</title>
+    <!--css-->
+    <link rel="stylesheet" href="css/style.min.css">
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- Favicon-->
+    <link href="images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <!-- animate css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+      
+    </script>
+  </head>
+  <body class="body">
+    <!--header-->
+    <header class="header">
+      <div class="headermiddle">
+        <div class="wrap flex-space">
+          <div class="logo headermiddle__logo"><a href="/index.html"><img src="images/logo.svg" alt="s-stoi-nn"></a><span>Строительство домов из дерева</span></div>
+          <div class="headermiddle__city flex-column"><a class="link headermiddle__city-chouse" href="#">Нижний Новгород</a><span class="headermiddle__text">Мы работаем по городу<br>и России   </span></div>
+          <div class="headermiddle__button">
+            <div class="button button_view-action" onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Заказать замер</div>
+          </div>
+          <div class="flex-column"><span class="headermiddle__tel-1">+7 (831) 413-76-72</span><span class="headermiddle__tel-2">+7 (920) 298-32-71 </span><a class="cursor headermiddle__feedback link_view-orange" onclick="document.getElementById('id03').style.display='block'" style="width:auto;">заказать обратный звонок</a>
+            <!-- feedback_modal-->
+            <div class="modal" id="id03"><span class="modal__close" onclick="document.getElementById('id03').style.display='none'" title="Close Modal">&times</span>
+              <div class="feedback flex-space wrap gap-vertical flex-center">
+                <form class="form column-4" action="feedback.php">
+                  <div class="form__header feedback__header">Связаться с нами</div>
+                  <div class="form__footer">
+                    <div class="flex-space">
+                      <div class="flex-column column-3">
+                        <label class="label" for="name">Ваше имя</label>
+                        <input class="input feedback__width" type="text" id="name">
+                      </div>
+                      <div class="flex-column column-3">
+                        <label class="label" for="email">Ваш email</label>
+                        <input class="input" type="text" id="email">
+                      </div>
+                    </div>
+                    <label class="label" for="subject">Тема обращения</label>
+                    <input class="input" type="text" id="subject">
+                    <label class="label" for="text">Текст</label>
+                    <textarea class="input" type="text" id="text"></textarea>
+                    <button class="button button_view-action" type="submit">Отправить</button>
+                  </div>
+                </form>
+              </div>
+            </div><span class="headermiddle__time">время работы: круглосуточно</span>
+          </div>
+        </div>
+      </div>
+      <div class="headerbottom">
+        <div class="wrap">
+          <div class="headerbottom__right flex-center"><a class="dropdown__button headerbottom__link" href="/index.html">ГЛАВНАЯ</a><a class="dropdown__button headerbottom__link" href="/bathhouse.html">БАНИ</a><a class="dropdown__button headerbottom__link" href="/portfolio.html">ПРИМЕРЫ РАБОТ</a><a class="dropdown__button headerbottom__link" href="/cost.html">СТОИМОСТЬ</a><a class="dropdown__button headerbottom__link" href="/about.html">О НАС</a></div>
+        </div>
+      </div>
+    </header>
+    <!--content-->
+    <div class="content">
+      <!--slider-->
+      <div class="main-slider js-main-slider">
+        <div class="main-slider__i" style="background-image:url(images/slider/slide1.jpg);">
+          <div class="wrap main-slider__i-wrap flex-center">
+            <div class="main-slider__i-text"><span>СТРОИТЕЛЬСТВО ДОМОВ ИЗ<br>ОЦИЛИНДРОВАННОГО БРЕВНА</span>
+              <p>Наша цель проста - предоставить нашим клиентам высокий уровень качества и сервиса.<br>Мы верим, что отличные идеи начинаются с точного расчета.</p><a class="button button_view-reverse" href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="main-slider__i" style="background-image:url(images/slider/slide2.jpg);">
+          <div class="wrap main-slider__i-wrap flex-center">
+            <div class="main-slider__i-text2"><span>СТРОИТЕЛЬСТВО ДОМОВ ИЗ БРУСА<br>СО СВОИМ ПРОИЗВОДСТВОМ</span>
+              <p>Наша цель проста - предоставить нашим клиентам высокий уровень качества и сервиса.<br>Мы верим, что отличные идеи начинаются с точного расчета.</p><a class="button button_view-reverse" href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--advantages-->
+      <div class="advantages wrap row">
+        <div class="advantages__item fadeInRight animated wow col">
+          <div class="advantages__img"><img src="images/medal.png" alt="medal"></div>
+          <div class="advantages__title">
+            <h5>ВЫСОЧАЙШЕЕ КАЧЕСТВО</h5>
+          </div>
+          <div class="advantages__text">
+            <p>Собственное производство позволяет нам предоставить вам высочайшее качесвто строительства при низких ценах</p>
+          </div>
+        </div>
+        <div class="advantages__item fadeInRight animated wow col">
+          <div class="advantages__img"><img src="images/speed.png" alt="speed"></div>
+          <div class="advantages__title">
+            <h5>СКОРОСТЬ ОБРАБОТКИ ЗАЯВОК</h5>
+          </div>
+          <div class="advantages__text">
+            <p>Наша команда быстро ответит на все ваши вопросы, поможет расчитать и подобрать проект</p>
+          </div>
+        </div>
+        <div class="advantages__item fadeInRight animated wow col">
+          <div class="advantages__img"><img src="images/money.png" alt="money"></div>
+          <div class="advantages__title">
+            <h5>ГИБКАЯ ЦЕНОВАЯ ПОЛИТИКА</h5>
+          </div>
+          <div class="advantages__text">
+            <p>Мы индивидуально рассматриваем каждое обращение к нам и помогаем подобрать проект в зависимости от ваших финансовых возможностей</p>
+          </div>
+        </div>
+      </div>
+      <!--description-->
+      <div class="bgc-grey padding-v-80">
+        <div class="description wrap">
+          <div class="description__title margin-v-60">
+            <h1>Дома из бруса - долговечны и красивы</h1>
+            <p>На сайте вы можете ознакомиться с различными проектами рубленных домов<br> или разработать свой уникальный проект, совместно с нашими архитекторами. Ждем вас!</p>
+          </div>
+          <div class="flex-space">
+            <div class="col-5 description__img fadeInLeft animated wow"><img class="border-shdw" src="images/description.jpg" alt="description"></div>
+            <div class="col-7 description__text fadeInRight animated wow">
+              <h3>У нас вы можете закзать дома из бруса</h3>
+              <p>Наша строительная компания - одна из тех немногих, которые возводят рубленные дома исключительно из высококачественного материала. Для строительства бревенчатых домов мы используем разные породы дерева. Заказывая у нас рубленные дома под ключ, вы получаете самое высокое качество древесины.</p>
+              <div class="button button_view-action">Расчет стоимости			</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--projects-->
+      <div class="projects">
+        <div class="wrap">
+          <div class="projects__title flex-center">
+            <h1 class="projects__h1">Несколько проектов из нашей коллекции</h1><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g fill="#159493"><g id="surface1"><path d="M220.5,52.5l-15.75,-15.75l-78.75,77.97071l-78.75,-77.97071l-15.75,15.75l94.5,94.5z"></path><path d="M220.5,120.75l-15.75,-15.75l-78.75,78.36035l-78.75,-78.36035l-15.75,15.75l94.5,94.5z"></path></g></g></g></svg>
+          </div>
+          <div class="projects__item flex-space margin-v-80 flex-wrap">
+            <div class="projects__description col-4 fadeInLeft animated wow"><span class="project__name">Проект № 1</span>
+              <div class="margin-v-20 flex-space flex-vertical">
+                <div class="wrapeer"><img class="project__img" src="images/projects/blueprint.png" alt="blueprint"><span class="project__spantext">Площадь:</span></div>
+                <sapn class="project__spannum">60 м.кв.</sapn>
+              </div>
+              <div class="flex-start margin-v-20 flex-space flex-vertical">
+                <div class="wrapeer"><img class="project__img" src="images/projects/set-square.png" alt="blueprint"><span class="project__spantext">Габариты:</span></div><span class="project__spannum">7,59 x 6,30</span>
+              </div>
+              <div class="flex-start margin-v-20 flex-space flex-vertical">
+                <div class="wrapeer"><img class="project__img" src="images/projects/skyscraper.png" alt="blueprint"><span class="project__spantext">Жилых комнат:</span></div><span class="project__spannum">3</span>
+              </div>
+            </div>
+            <div class="projects__img col-6 fadeInRight animated wow"><img class="border-shdw" src="images/project-1.jpg" alt="project"></div>
+            <div class="project__text col-6 margin-v-40 padding-v-60 padding-g-60 fadeInLeft animated wow">
+              <p>Представляем Вашему вниманию готовый проект небольшого одноэтажного дома из бруса. Такой деревянный домик – отличный вызов однотипным многоэтажкам. Преимуществом этого дома из клееного бруса является быстрая возводимость, экологическая чистота и относительная доступность (экономия на отделке).</p>
+              <div class="button button_view-action projects_btn">Заказать полный расчет</div>
+            </div>
+            <div class="project__schema margin-v-40 col-6 flex-space fadeInRight animated wow">
+              <div class="flex-column"><span class="project__schema-span">Первый этаж</span><img class="project__schema-img" src="images/projects/floor-1.svg" alt="project"></div>
+              <div class="flex-column"><span class="project__schema-span">Второй этаж</span><img class="project__schema-img" src="images/projects/floor-2.svg" alt="project"></div>
+            </div>
+          </div>
+        </div>
+        <div class="bgc-grey">
+          <div class="wrap padding-v-80">
+            <div class="projects__item flex-space flex-wrap">
+              <div class="projects__description col-4 fadeInLeft animated wow"><span class="project__name">Проект № 2</span>
+                <div class="margin-v-20 flex-space flex-vertical">
+                  <div class="wrapeer"><img class="project__img" src="images/projects/blueprint.png" alt="blueprint"><span class="project__spantext">Площадь:</span></div>
+                  <sapn class="project__spannum">78 м.кв.</sapn>
+                </div>
+                <div class="flex-start margin-v-20 flex-space flex-vertical">
+                  <div class="wrapeer"><img class="project__img" src="images/projects/set-square.png" alt="blueprint"><span class="project__spantext">Габариты:</span></div><span class="project__spannum">7 м. x 6,80 м.</span>
+                </div>
+                <div class="flex-start margin-v-20 flex-space flex-vertical">
+                  <div class="wrapeer"><img class="project__img" src="images/projects/skyscraper.png" alt="blueprint"><span class="project__spantext">Жилых комнат:</span></div><span class="project__spannum">4</span>
+                </div>
+              </div>
+              <div class="projects__img col-6 fadeInRight animated wow"><img class="border-shdw" src="images/project-2.jpg" alt="project"></div>
+              <div class="project__text col-6 margin-v-40 padding-v-60 padding-g-60 fadeInLeft animated wow">
+                <p>Прежде всего, стоит заметить, что жилой дом из оцилиндрованного бревна по проекту состоит из 4 изолированных комнат, светлого холла, кухни-столовой, раздельного санузла, ванной, кладовой и хоз комнаты, террасы. Комната для хозяев находится на первом этаже. Гостевая спальня расположена на втором мансардном этаже.</p>
+                <div class="button button_view-action projects_btn">Заказать полный расчет</div>
+              </div>
+              <div class="project__schema margin-v-40 col-6 flex-space fadeInRight animated wow">
+                <div class="flex-column"><span class="project__schema-span">Первый этаж</span><img class="project__schema-img" src="images/projects/floor-1.2.svg" alt="project"></div>
+                <div class="flex-column"><span class="project__schema-span">Второй этаж</span><img class="project__schema-img" src="images/projects/floor-2.2.svg" alt="project"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrap padding-v-80">
+          <div class="projects__item flex-space flex-wrap">
+            <div class="projects__description col-4 fadeInLeft animated wow"><span class="project__name">Проект № 3</span>
+              <div class="margin-v-20 flex-space flex-vertical">
+                <div class="wrapeer"><img class="project__img" src="images/projects/blueprint.png" alt="blueprint"><span class="project__spantext">Площадь:</span></div>
+                <sapn class="project__spannum">90 м.кв.</sapn>
+              </div>
+              <div class="flex-start margin-v-20 flex-space flex-vertical">
+                <div class="wrapeer"><img class="project__img" src="images/projects/set-square.png" alt="blueprint"><span class="project__spantext">Габариты:</span></div><span class="project__spannum">9.80 м. x 8,30 м.</span>
+              </div>
+              <div class="flex-start margin-v-20 flex-space flex-vertical">
+                <div class="wrapeer"><img class="project__img" src="images/projects/skyscraper.png" alt="blueprint"><span class="project__spantext">Жилых комнат:</span></div><span class="project__spannum">6</span>
+              </div>
+            </div>
+            <div class="projects__img col-6 fadeInRight animated wow"><img class="border-shdw" src="images/project-3.jpg" alt="project"></div>
+            <div class="project__text col-6 margin-v-40 padding-v-60 padding-g-60 fadeInLeft animated wow">
+              <p>В последнее время все большей популярностью стали пользоваться проекты зимних домов из бруса, ведь в таких домах приятно и комфортно проводить время не только  летом, но и зимой. Специально адаптированные для холодных отечественных условий, проекты зимних домов из бруса способны обеспечить комфортное загородное проживание. </p>
+              <div class="button button_view-action projects_btn">Заказать полный расчет</div>
+            </div>
+            <div class="project__schema margin-v-40 col-6 flex-space fadeInRight animated wow">
+              <div class="flex-column"><span class="project__schema-span">Первый этаж</span><img class="project__schema-img2" src="images/projects/floor-1.3.svg" alt="project"></div>
+              <div class="flex-column"><span class="project__schema-span">Второй этаж</span><img class="project__schema-img3" src="images/projects/floor-2.3.svg" alt="project"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--materials-->
+      <div class="materials bgc-grey">
+        <div class="wrap padding-v-60">
+          <div class="materials__title">
+            <h1>Используемые материалы</h1>
+            <p>Наши клиенты могут выбрать проекты домов из двух видов материалов.</p>
+          </div>
+          <div class="materials__item flex-space margin-v-60 fadeInLeft animated wow"><img class="border-shdw" src="images/materials1.jpg" alt="materials1">
+            <div class="flex-column col-5"><span class="materials__span">Оцилиндрованное бревно</span>
+              <p>В его производстве используются цельные стволы. В процессе оцилиндровки получают идеально ровные бревна одинакового диаметра. Собранные из них дома не требуют наружной отделки, что снижает стоимость строительства.</p>
+            </div>
+          </div>
+          <div class="materials__item flex-space fadeInRight animated wow"><img class="border-shdw" src="images/materials2.jpg" alt="materials2">
+            <div class="flex-column col-5"><span class="materials__span">Все виды бруса</span>
+              <p>В наших проектах используется обычный, профилированный и клееный брус. Первый вариант самый дешевый: он поставляется без дополнительной обработки. Профилированный и клееный брус подвергаются камерной сушке, что снижает усадку коробки.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--individualProject-->
+      <div class="individualProject">
+        <div class="wrap padding-v-60">
+          <h1 class="h1-center h1-white">Типовые и индивидуальные проекты</h1>
+          <p class="p-white">Архитекторами s-stroi-nn был создан ряд типовых проектов, которые учитывают потребности большинства людей о комфортном частном жилье. У нас можно заказать недорогой деревянный дом площадью от 38 м.кв. Небольшие одноэтажные постройки чаще всего служат для сезонного проживания. Также мы предлагаем проекты двухэтажных домов большой площади для круглогодичного использования. Они оборудуются всеми коммуникациями и инженерными сетями. Цена деревянного дома определяется не только его площадью и этажностью. На нее влияет конструкция фундамента и сложность архитектуры. Среди типовых предложений Вы найдете проекты с мансардой, гаражом или террасой. Также мы готовы разработать индивидуальное решение, учитывающее все пожелания будущего владельца. Вы можете взять за основу любой проект или заказать расчеты с нуля. Именно так были созданы лучшие деревянные дома нашей компании.</p>
+          <div class="text-center">
+            <div class="button button_view-reverse margin-v-20">Нужна консультация</div>
+          </div>
+        </div>
+      </div>
+      <!--portfolio-->
+      <div class="portfolio">
+        <div class="wrap padding-v-60">
+          <h1 class="h1-center">Наше портфолио</h1>
+          <p class="text-center">Некоторые работы выполненные нами за последнее время</p>
+          <div class="flex-wrap flex-space"><img class="portfolio__img border-shdw" src="/images/portfolio/1.jpg" alt=""><img class="portfolio__img border-shdw" src="/images/portfolio/2.jpg" alt=""><img class="portfolio__img border-shdw" src="/images/portfolio/7.jpg" alt=""><img class="portfolio__img border-shdw" src="/images/portfolio/5.jpg" alt=""><img class="portfolio__img border-shdw" src="/images/portfolio/3.jpg" alt=""><img class="portfolio__img border-shdw" src="/images/portfolio/4.jpg" alt=""><img class="portfolio__img border-shdw" src="/images/portfolio/6.jpg" alt=""><img class="portfolio__img border-shdw" src="/images/portfolio/8.jpg" alt=""><img class="portfolio__img border-shdw" src="/images/portfolio/9.jpg" alt=""></div>
+        </div>
+      </div>
+      <!--HowWeWorking-->
+      <div class="work bgc-grey">
+        <div class="wrap padding-v-60">
+          <h1 class="h1-center">Как мы работаем</h1>
+          <p class="text-center">Схема работы с нашей компанией</p>
+          <div class="before"></div>
+          <div class="row justify-content-between work__z">
+            <div class="col">
+              <div class="circle"><img class="work__img" src="/images/HowWeWorking/plan.png" alt=""></div>
+              <div class="work__col text-center"><span class="span__bold margin-v-20 work__span">Техническая документация</span>
+                <p>Позвоните нам или заполните форму обратной связи на сайте и укажите, когда вам удобнее перезвонить.</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="circle"><img class="work__img" src="/images/HowWeWorking/wood-cutting.png" alt=""></div>
+              <div class="work__col text-center"><span class="span__bold margin-v-20 work__span">Производство</span>
+                <p>Предварительный расчет. Встречаемся и составляем техзадание на проектирование.</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="circle"><img class="work__img" src="/images/HowWeWorking/truck.png" alt=""></div>
+              <div class="work__col text-center"><span class="span__bold margin-v-20 work__span">Фундамент</span>
+                <p>Подписание договора с двух сторон и внесение предоплаты за наши услуги.</p>
+              </div>
+            </div>
+          </div>
+          <div class="after"></div>
+          <div class="before"></div>
+          <div class="row justify-content-between work__z">
+            <div class="col">
+              <div class="circle"><img class="work__img" src="/images/HowWeWorking/screw.png" alt=""></div>
+              <div class="work__col text-center"><span class="span__bold margin-v-20 work__span">Сборка и монтаж дома</span>
+                <p>Разработка генплана участка, проекта дома и других необходимых документов.</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="circle"><img class="work__img" src="/images/HowWeWorking/pipe.png" alt=""></div>
+              <div class="work__col text-center"><span class="span__bold margin-v-20 work__span">Инженерные системы</span>
+                <p>Планировка участка, возведение фундамента, строительство дома.</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="circle"><img class="work__img" src="/images/HowWeWorking/tools.png" alt=""></div>
+              <div class="work__col text-center"><span class="span__bold margin-v-20 work__span">Отделка</span>
+                <p>Подписание акта приема-передачи выполненных работ и новоселье!</p>
+              </div>
+            </div>
+          </div>
+          <div class="after2"></div>
+          <div class="row justify-content-start mt-4 work__z">
+            <div class="col-4">
+              <div class="circle"><img class="work__img" src="/images/HowWeWorking/key.png" alt=""></div>
+              <div class="work__col text-center"><span class="span__bold margin-v-20 work__span">Эксплуатация дома</span>
+                <p>Подписание акта приема-передачи выполненных работ и новоселье!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer-->
+    <div class="body__footer">
+      <div class="footer wrap flex-space">
+        <div class="footer__menu flex-column"><a class="footer__link" href="/#">О нас</a><a class="footer__link" href="/#">Преимущества</a><a class="footer__link" href="/#">Примеры работ</a><a class="footer__link" href="/#">Стоимость</a><a class="footer__link" href="/#">Отзывы</a></div>
+        <div class="footer__contacts flex-column"><span>Адрес:</span><span>г. Нижний Новгород</span><span>ул. </span><span>тел. +7 (831) 413-76-72</span><span>почта s-stroi-nn@mail.ru</span></div>
+        <div class="footer__logo">
+          <div class="logo"><a href="#"><img src="images/logo.svg" alt="s-stoi-nn"></a><span class="footer__span">Строительство домов из бруса</span></div>
+          <div class="social"><a class="social__link" href="#"><img class="social__pic" src="/images/vk.png" alt="vk"></a><a class="social__link" href="#"><img class="social__pic" src="/images/instagram.png" alt="instagram"></a><a class="social__link" href="#"><img class="social__pic" src="/images/facebook.png" alt="facebook"></a><a class="social__link" href="#"><img class="social__pic" src="/images/whatsapp.png" alt="whatsapp"></a></div>
+        </div>
+      </div>
+    </div>
+    <!--scripts-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/form.js"></script>
+  </body>
+</html>

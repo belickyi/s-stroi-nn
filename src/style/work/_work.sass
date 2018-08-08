@@ -1,26 +1,69 @@
+.work
+
 .work__span
   display: inline-block
 
 .work__col
   padding: 0 20px
 
-.circle-blue
-  width: 80px
-  height: 80px
-  background-color: blue
+.circle
+  position: relative
+  margin: 0 auto
+  width: 110px
+  height: 110px
+  background-color: $green
   border-radius: 50%
+  z-index: 1
 
-.circle-red
-  color: #fff
-  width: 80px
-  height: 80px
-  background-color: red
-  border-radius: 50%
+.before
+  position: relative
+  top: 67px
+  padding: 0 140px
 
 .before:before
   display: inline-block
   content: ''
-  border: solid 2px
-  color: $green
+  border: dashed 2px
+  color: $brown
   width: 100%
   box-sizing: border-box
+  opacity: 0.5
+
+.after
+  position: absolute
+
+.after:after
+  display: inline-block
+  content: ''
+  border: dashed 2px
+  color: $brown
+  height: 100px
+  box-sizing: border-box
+  position: relative
+  height: 311px
+  left: 924px
+  top: -222px
+  opacity: 0.5
+
+.after2
+  position: absolute
+
+.after2:after
+  display: inline-block
+  content: ''
+  border: dashed 2px
+  color: $brown
+  height: 100px
+  box-sizing: border-box
+  position: relative
+  height: 311px
+  left: 170px
+  top: -222px
+  opacity: 0.5
+
+.work__img
+  margin: 23px
+
+.work__z
+  position: relative
+  z-index: 1
